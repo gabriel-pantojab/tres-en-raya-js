@@ -104,7 +104,7 @@ function checkWinner(symbol) {
 
   for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
-      if (grid[i][j] === symbol) column.count++;
+      if (grid[i][j] === symbol) column++;
       if (grid[j][i] === symbol) row++;
       if (grid[j][j] === symbol) mainDig++;
       if (grid[j][N - j - 1] === symbol) secondDig++;
